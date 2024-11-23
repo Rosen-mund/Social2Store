@@ -1,0 +1,50 @@
+{
+    "name": "social2store-frontend",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "start": "concurrently \"npm run frontend\" \"npm run backend\"",
+        "frontend": "react-scripts start",
+        "backend": "cd ../backend && python app.py"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.11.0",
+        "@emotion/styled": "^11.11.0",
+        "@mui/icons-material": "^5.14.0",
+        "@mui/material": "^5.14.0",
+        "axios": "^1.5.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^7.0.1",
+        "react-scripts": "5.0.1",
+        "web-vitals": "^2.1.4"
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.0",
+        "eslint": "^8.51.0",
+        "eslint-plugin-react": "^7.33.0",
+        "sass": "^1.66.1"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+
+}
