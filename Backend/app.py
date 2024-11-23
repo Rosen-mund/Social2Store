@@ -165,5 +165,4 @@ def generate_listing_endpoint():
     return jsonify(listing)
 
 
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+
